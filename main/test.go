@@ -1,8 +1,8 @@
 package main
 
 import (
-	"MoChengGoUtil"
 	"fmt"
+	container "github.com/MouseChannle/MoChengGoUtil/container"
 )
 
 type Test[myType any] struct {
@@ -22,7 +22,7 @@ func main() {
 	t := &Test[int]{}
 	t.testFunc(12)
 
-	var myQueue MoChengGoUtil.MoChengQueue[int]
+	var myQueue container.MoChengQueue[int]
 
 	for n := 0; n < 10; n++ {
 		myQueue.Enqueue(n)
